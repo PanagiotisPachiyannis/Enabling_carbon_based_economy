@@ -62,9 +62,6 @@ public class CategoriseRatingsIssuer {
       String cell0 = row.getCell(0).getStringCellValue(); // get the green bond
       String cell1 = row.getCell(1).getStringCellValue(); // get the conventional bond
       double cell2 = row.getCell(10).getNumericCellValue(); // get the green ytmBid
-//      double cell3 = row.getCell(3).getNumericCellValue(); // get the green ytmAsk
-//      double cell4 = row.getCell(4).getNumericCellValue(); // get the green ytmBid
-//      double cell5 = row.getCell(5).getNumericCellValue(); // get the green ytmAsk
       String rating = row.getCell(15).getStringCellValue(); // get issuer rating
 
       switch (rating) {
@@ -116,24 +113,9 @@ public class CategoriseRatingsIssuer {
       Cell cell0_ = outRow.createCell(0);
       Cell cell1_ = outRow.createCell(1);
       Cell cell2_ = outRow.createCell(2);
-//      Cell cell3_ = outRow.createCell(3);
-//      Cell cell4_ = outRow.createCell(4);
-//      Cell cell5_ = outRow.createCell(5);
-//      Cell cell6_ = outRow.createCell(6);
-//      Cell cell7_ = outRow.createCell(7);
-//      Cell cell8_ = outRow.createCell(8);
       cell0_.setCellValue(cell0);
       cell1_.setCellValue(cell1);
       cell2_.setCellValue(cell2);
-//      cell3_.setCellValue(cell3);
-//      cell4_.setCellValue(cell4);
-//      cell5_.setCellValue(cell5);
-//      cell8_.setCellValue(rating);
-//      cell6_.setCellFormula("C" + (rowNum + 1) + "-E" + (rowNum + 1));
-//      cell7_.setCellFormula("D" + (rowNum + 1) + "-F" + (rowNum + 1));
-//      XSSFFormulaEvaluator formulaEvaluator = outputWorkbook.getCreationHelper().createFormulaEvaluator();
-//      formulaEvaluator.evaluateFormulaCell(cell6_);
-//      formulaEvaluator.evaluateFormulaCell(cell7_);
     }
     try {
       outputWorkbook.write(out);

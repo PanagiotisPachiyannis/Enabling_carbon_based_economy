@@ -82,11 +82,6 @@ public class CategoriseGreenActivity {
       String cell0 = row.getCell(0).getStringCellValue(); // get the green bond
       String cell1 = row.getCell(1).getStringCellValue(); // get the conventional bond
       double cell2 = row.getCell(8).getNumericCellValue(); // get the ytm % diff
-//      double cell3 = row.getCell(3).getNumericCellValue(); // get the conventional bond
-//      double cell4 = row.getCell(4).getNumericCellValue(); // get the conventional bond
-//      double cell5 = row.getCell(5).getNumericCellValue(); // get the conventional bond
-//      double cell8 = row.getCell(8).getNumericCellValue(); // get the conventional bond
-//      double cell9 = row.getCell(9).getNumericCellValue(); // get the conventional bond
       String cell12 = row.getCell(13).getStringCellValue(); // get the green activity
 
       String regex = "([^/]+)"; // regex to extract the issuer from the green bond
@@ -131,30 +126,9 @@ public class CategoriseGreenActivity {
     Cell cell0_ = outRow.createCell(0);
     Cell cell1_ = outRow.createCell(1);
     Cell cell2_ = outRow.createCell(2);
-//    Cell cell3_ = outRow.createCell(3);
-//    Cell cell4_ = outRow.createCell(4);
-//    Cell cell5_ = outRow.createCell(5);
-//    Cell cell6_ = outRow.createCell(6);
-//    Cell cell7_ = outRow.createCell(7);
-//    Cell cell8_ = outRow.createCell(8);
-//    Cell cell9_ = outRow.createCell(9);
-//    Cell cell10_ = outRow.createCell(10);
     cell0_.setCellValue(cell0);
     cell1_.setCellValue(cell1);
     cell2_.setCellValue(cell2);
-//    cell3_.setCellValue(cell3);
-//    cell4_.setCellValue(cell4);
-//    cell5_.setCellValue(cell5);
-//    cell6_.setCellFormula("C" + (rowNum + 1) + "-E" + (rowNum + 1));
-//    cell7_.setCellFormula("D" + (rowNum + 1) + "-F" + (rowNum + 1));
-//    cell8_.setCellValue(cell8);
-//    cell9_.setCellValue(cell9);
-//    cell10_.setCellFormula("ABS(I" + (rowNum + 1) + "-J" + (rowNum + 1) + ")");
-
-//    XSSFFormulaEvaluator formulaEvaluator = outputWorkbook.getCreationHelper().createFormulaEvaluator();
-//    formulaEvaluator.evaluateFormulaCell(cell6_);
-//    formulaEvaluator.evaluateFormulaCell(cell7_);
-//    formulaEvaluator.evaluateFormulaCell(cell10_);
   }
 
 

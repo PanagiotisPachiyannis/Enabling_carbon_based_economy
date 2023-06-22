@@ -112,15 +112,9 @@ public class CategoriseMatches {
     Cell cell0_ = row.createCell(0);
     Cell cell1_ = row.createCell(1);
     Cell cell2_ = row.createCell(2);
-//    Cell cell3_ = row.createCell(3);
-//    Cell cell4_ = row.createCell(4);
     cell0_.setCellValue(cell0);
     cell1_.setCellValue(cell1);
     cell2_.setCellValue(cell2);
-////    cell3_.setCellValue(cell3);
-////    cell4_.setCellFormula("C" + (rowNum + 1) + "-D" + (rowNum + 1)); // formula to get yield difference
-//    XSSFFormulaEvaluator formulaEvaluator = workbook.getCreationHelper().createFormulaEvaluator();
-//    formulaEvaluator.evaluateFormulaCell(cell4_); // evaluate the formula
   }
 
   // Method to write to the output file and then close the output stream and workbook

@@ -97,12 +97,6 @@ public class CategoriseRatings {
       }
       String cell1 = row.getCell(1).getStringCellValue(); // get the conventional bond
       double cell2 = row.getCell(10).getNumericCellValue(); // get the green ytmBid
-//      double cell3 = row.getCell(3).getNumericCellValue(); // get the green ytmAsk
-//      double cell4 = row.getCell(4).getNumericCellValue(); // get the green ytmBid
-//      double cell5 = row.getCell(5).getNumericCellValue(); // get the green ytmAsk
-//      double cell8 = row.getCell(8).getNumericCellValue(); // get gb cpn
-//      double cell9 = row.getCell(9).getNumericCellValue(); // get cb cpn
-//      String cell10 = row.getCell(12).getStringCellValue(); // get the green activity
       String regex = "moodysRating='(.*?)', snpRating='(.*?)', maturity";
       Pattern pattern = Pattern.compile(regex); // compile the pattern
       Matcher matcher = pattern.matcher(cell0); // match on the pattern
@@ -160,28 +154,9 @@ public class CategoriseRatings {
         Cell cell0_ = outRow.createCell(0);
         Cell cell1_ = outRow.createCell(1);
         Cell cell2_ = outRow.createCell(2);
-//        Cell cell3_ = outRow.createCell(3);
-//        Cell cell4_ = outRow.createCell(4);
-//        Cell cell5_ = outRow.createCell(5);
-//        Cell cell6_ = outRow.createCell(6);
-//        Cell cell7_ = outRow.createCell(7);
-//        Cell cell8_ = outRow.createCell(8);
-//        Cell cell9_ = outRow.createCell(9);
-//        Cell cell10_ = outRow.createCell(10);
         cell0_.setCellValue(cell0);
         cell1_.setCellValue(cell1);
         cell2_.setCellValue(cell2);
-//        cell3_.setCellValue(cell3);
-//        cell4_.setCellValue(cell4);
-//        cell5_.setCellValue(cell5);
-//        cell6_.setCellFormula("C"+(rowNum+1)+"-E"+(rowNum+1));
-//        cell7_.setCellFormula("D"+(rowNum+1)+"-F"+(rowNum+1));
-//        XSSFFormulaEvaluator formulaEvaluator = outputWorkbook.getCreationHelper().createFormulaEvaluator();
-//        formulaEvaluator.evaluateFormulaCell(cell6_);
-//        formulaEvaluator.evaluateFormulaCell(cell7_);
-//        cell8_.setCellValue(cell8);
-//        cell9_.setCellValue(cell9);
-//        cell10_.setCellValue(cell10);
       } else {
         System.out.println("ratings not found for bond: " + cell0);
       }

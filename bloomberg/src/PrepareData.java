@@ -100,13 +100,4 @@ public class PrepareData {
 
         return result;
     }
-
-//    private static LocalDate parseDate(String dateStr) {
-//        String dateFormat = new DateFormatter.("yyyy-MM-dd");
-//        try {
-//            return dateFormat.parse(dateStr);
-//        } catch (ParseException e) {
-//            return null;
-//        }
-//    }
 }
