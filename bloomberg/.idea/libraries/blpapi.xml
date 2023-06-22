@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="blpapi">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/blpapi_java_3.19.1.1/bin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/blpapi_java_3.19.1.1/bin" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.bloomberglp.blpapi"},{"l":"com.bloomberglp.blpapi.test"}];updateSearchResults();
