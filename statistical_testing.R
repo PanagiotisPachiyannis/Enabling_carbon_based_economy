@@ -22,10 +22,7 @@ qqline(relative_yield_spreads, col = "red", lwd = 2)
 shapiro_test <- shapiro.test(relative_yield_spreads)
 print(shapiro_test)
 
-# Kolmogorov-Smirnov test for normality
-ks_test <- ks.test(relative_yield_spreads, "pnorm", mean(relative_yield_spreads), sd(relative_yield_spreads))
-print(ks_test)
-
+# Perform wilcoxon signed rank test
 wilcox_test <- wilcox.test(relative_yield_spreads, mu = 0, conf.int = TRUE, conf.level = 0.999)
 
 # Print the test results
