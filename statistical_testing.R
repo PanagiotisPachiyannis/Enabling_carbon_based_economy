@@ -5,10 +5,9 @@ library(readr)
 # Read data from CSV file
 data <- read_csv("/Users/Panos/Desktop/Book1.csv")
 
-# Check the structure of your data
+# Check the structure of our data
 str(data)
 
-# If your data is not in the first column, replace `1` with the appropriate column number
 relative_yield_spreads <- data[[1]]
 relative_yield_spreads <- as.numeric(relative_yield_spreads)
 # Visual inspection of the data using a histogram
